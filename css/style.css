@@ -48,11 +48,8 @@ Developer @GA in SYD
 
 body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    color: #033048;
     background: #fff;
 }
-
 
 /******************************************
 /* LAYOUT
@@ -67,21 +64,28 @@ body {
 }
 
 header {
-    height: 150px;
-    line-height: 150px;
     background: #033048;
-    padding: 0px 110px;
+    background-image: url(../images/header_bg.jpg);
+    background-position: center bottom;
+    padding: 23px 120px;
+}
+
+#headerBlog {
+    height: 120px;
+}
+
+#headerLanding {
+    height: 700px;
 }
 
 main {
-    background: #f0efef;
-    padding: 75px 110px;
+    background: #efefef;
+    padding: 80px 120px 60px 120px;
 }
 
 footer {
-    text-align: center;
     background: #121212;
-    padding: 50px 110px;
+    padding: 80px 120px 40px 120px;
 }
 
 
@@ -96,172 +100,125 @@ h4,
 h5,
 h6,
 p,
-ul,
 a,
-#articles,
-#asides,
-small,
+div,
+article,
+aside,
 img {
     margin: 0px;
     padding: 0px;
-}
-
-#articles {
-    width: 700px;
-}
-
-#asides {
-    width: 240px;
-}
-
-#signUp {
-    text-align: center;
-    background: #f9e42e;
-    padding: 30px 0px;
-}
-
-button {
-    font-size: 22px;
-    font-weight: 600;
-    color: #fff;
-    border: 0px;
-    border-radius: 5px;
-    background: #033048;
-    padding: 15px 75px;
-}
-
-button:hover {
-    color: #f9e42e;
 }
 
 a {
     text-decoration: none;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
-    color: inherit;
+a:link {
+    color: #033048;
 }
 
-ul {
-    list-style: none;
+a:visited {
+    color: #033048;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a:active {
+    color: #033048;
 }
 
 h1,
-header nav a {
-    display: inline-block;
-}
-
-h1 {
-    color: #fff;
+h6 {
     font-size: 48px;
+    font-weight: 800;
+    color: #fff;
 }
 
 h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #fff;
+}
+
+h3 {
     font-size: 40px;
     font-weight: 600;
-    margin-bottom: 20px;
+    color: #033048;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #033048;
 }
 
 h6 {
     color: #f9e42e;
-    font-size: 48px;
 }
 
-article img {
-    margin-bottom: 20px;
+header h1,
+header nav {
+    display: inline-block;
 }
 
 header nav {
     text-align: right;
     float: right;
+    margin-top: 26px;
+}
+
+header nav a {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+header nav a:link {
     color: #f9e42e;
 }
 
-articles,
-asides {
-    color: #033048;
+header nav a:visited {
+    color: #f9e42e;
 }
 
-#asides {
-    font-size: 24px;
+header nav a:hover {
+    color: #fff;
 }
 
-h4 {
-    font-size: 32px;
-    margin-bottom: 20px;
+header nav a:active {
+    color: #f9e42e;
 }
 
-aside {
-    margin-bottom: 25px;
-}
-
-#asides a {
-    font-weight: 600;
-    font-size: 22px;
-}
-
-#asides ul li a {
-    font-weight: 300;
-    font-size: 24px;
-}
-
-#asides p {
-    font-size: 22px;
-}
-
-article a {
-    display: block;
-    text-align: right;
-    font-size: 24px;
-    font-weight: 600;
+#articles {
+    width: 700px;
 }
 
 article p {
-    color: #666666;
     font-size: 24px;
-    margin-bottom: 30px;
+    font-weight: 300;
+    color: #606060;
 }
 
 article p::first-letter {
     float: left;
     font-size: 300%;
+    font-weight: 600;
     padding-right: 10px;
 }
 
-header nav a {
-    padding-left: 40px;
-    color: #f9e42e;
+article div {
+    text-align: right;
     font-size: 24px;
     font-weight: 600;
+    color: #033048;
 }
 
-h6 {
-    color: #f9e42e;
-}
-
-small {
-    color: #fff;
-}
-
-footer nav {
-    margin-left: -15px;
-}
-
-footer nav a {
-    display: inline-block;
-    padding: 20px;
-    margin: 50px 0px;
-}
-
-footer nav a:first-of-type {
-    padding: 10px;
-}
-
-footer nav a:last-of-type {
-    padding: 6px 20px 10px 20px;
+article h3,
+article img,
+article p {
+    margin-bottom: 30px;
 }
 
 article:after {
@@ -270,5 +227,93 @@ article:after {
     width: 100%;
     height: 1px;
     background: #033048;
-    margin: 30px 0px;
+    margin: 40px 0px 50px 0px;
+}
+
+aside {
+    width: 240px;
+    color: #033048;
+}
+
+#categories nav a {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+#about {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+#about p {
+    font-weight: 300;
+}
+
+#about a {
+    font-weight: 600;
+}
+
+aside h4 {
+    margin-bottom: 20px;
+}
+
+#categories,
+#about {
+    margin-bottom: 40px;
+}
+
+#signUp {
+    text-align: center;
+    background: #f9e42e;
+    padding: 30px 0px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h6,
+footer nav {
+    margin-bottom: 60px;
+}
+
+footer nav a {
+    display: inline-block;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+button {
+    font-size: 26px;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 70px;
+}
+
+.blueButton {
+    color: #fff;
+    background: #033048;
+}
+
+.yellowButton {
+    color: #033048;
+    background: #f9e42e;
+}
+
+.blueButton:hover {
+    color: #f9e42e;
+    background: #033048;
+}
+
+.yellowButton:hover {
+    color: #fff;
+    background: #f9e42e;
 }

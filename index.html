@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Relaxr Blog">
-    <meta name="keywords" content="Header, Content, Footer, Sign Up">
+    <meta name="keywords" content="Header, Content, Sign Up, Footer">
 
     <title>Relaxr</title>
 
@@ -19,70 +19,86 @@
 
     <div id="container">
 
-        <header>
-            <a href=""><h1>Relaxr</h1></a>
+        <header id="headerBlog">
+            <a href="index.html"><h1>Relaxr</h1></a>
             <nav>
-                <a href="">About</a>
+                <a href="landing.html">About</a>
                 <a href="">FAQ</a>
                 <a href="">Team</a>
                 <a href="">Contact Us</a>
-                <a href="">Blog</a>
+                <a href="index.html">Blog</a>
             </nav>
         </header>
 
         <main class="clearfix">
 
             <div id="articles" class="floatLeft">
+
                 <article>
-                    <h2>How I implemented Relaxr in 2 weeks and changed my life</h2>
+                    <h3>How I implemented Relaxr in 2 weeks and changed my life</h3>
                     <img src="images/blog_photo1.jpg" alt="article image">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod praesentium expedita quibusdam rem optio, veniam, ad consectetur quidem illum, nihil voluptatum voluptate dignissimos aspernatur reprehenderit. Provident expedita ipsa magni nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas laborum, quos quam. Vero illo fugit odit recusandae. Repellendus, maxime, ipsum? Veniam doloremque incidunt architecto non corporis minus distinctio, magnam cupiditate.</p>
-                    <a href="">Read more &gt;</a>
+                    <div>
+                        <a href="">Read more &gt;</a>
+                    </div>
+
                 </article>
+
                 <article>
-                    <h2>I traveled across the globe thanks to Relaxr’s Excel automation</h2>
+                    <h3>I travelled across the globe thanks to Relaxr’s Excel automation</h3>
                     <img src="images/blog_photo2.jpg" alt="article image">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci repellat, praesentium neque voluptates quibusdam tempore, ex veritatis tempora eveniet blanditiis officia rem aliquam quo similique impedit natus sed cumque, delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, quas, doloribus. Repellendus explicabo consequatur nulla, rem ad atque blanditiis, velit, soluta sint totam non dolor vel enim ea maxime ipsa!</p>
-                    <a href="">Read more &gt;</a>
+                    <div>
+                        <a href="">Read more &gt;</a>
+                    </div>
                 </article>
+
             </div>
 
-            <div id="asides" class="floatRight">
-                <aside id="categories">
+            <aside class="floatRight">
+                <div id="categories">
                     <h4>Categories</h4>
-                    <ul>
-                        <li><a href="">Success Stories</a></li>
-                        <li><a href="">Stats</a></li>
-                        <li><a href="">How Tos</a></li>
-                        <li><a href="">Best Of</a></li>
-                        <li><a href="">Business Tips</a></li>
-                    </ul>
-                </aside>
-                <aside id="about">
+                    <nav>
+                        <a href="">Success Stories</a>
+                        <a href="">Stats</a>
+                        <a href="">How Tos</a>
+                        <a href="">Best Of</a>
+                        <a href="">Business Tips</a>
+                    </nav>
+                </div>
+                <div id="about">
                     <h4>About Relaxr</h4>
                     <p>Proin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.</p>
                     <a href="">Learn More</a>
-                </aside>
+                </div>
                 <div id="ad">
                     <img src="images/ad-unit.png" alt="ad image">
                 </div>
-            </div>
+            </aside>
+
         </main>
 
         <div id="signUp">
-            <button>Sign Up Now!</button>
+            <button class="blueButton">Sign Up Now!</button>
         </div>
+        <!-- end signup -->
 
         <footer>
             <h6>Relaxr</h6>
             <nav id="socialIcons">
-                <a href="http://www.twitter.com/"><img id="tw-icon" src="images/twitter.png" alt="twitter icon"></a><a href="http://www.facebook.com/"><img id="fb-icon" src="images/facebook.png" alt="facebookicon"></a>
+                <a href="http://www.twitter.com/" target="_blank">
+                    <img id="tw-icon" src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="http://www.facebook.com/" target="_blank">
+                    <img id="fb-icon" src="images/facebook.png" alt="facebook icon">
+                </a>
             </nav>
-            <small>Copyright 2015. Relaxr.</small>
+            <p>&copy; Copyright 2015. Relaxr.</p>
         </footer>
 
-
     </div>
+    <!-- end container -->
+
 </body>
 
 </html>
