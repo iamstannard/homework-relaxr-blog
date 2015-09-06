@@ -51,6 +51,7 @@ body {
     background: #fff;
 }
 
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -89,8 +90,8 @@ footer {
 }
 
 
-/******************************************
-/* ADDITIONAL STYLES
+/*******************************************
+/* ADDITIONAL STYLES                       
 /*******************************************/
 
 h1,
@@ -103,10 +104,15 @@ p,
 a,
 div,
 article,
+section,
 aside,
 img {
     margin: 0px;
     padding: 0px;
+}
+
+ul {
+    margin: 0px;
 }
 
 a {
@@ -296,6 +302,11 @@ button {
     border: none;
     border-radius: 5px;
     padding: 20px 70px;
+    margin: auto;
+}
+
+button:focus {
+    outline: none;
 }
 
 .blueButton {
@@ -316,4 +327,54 @@ button {
 .yellowButton:hover {
     color: #fff;
     background: #f9e42e;
+}
+
+/*******************************************
+/* LANDING PAGE                      
+/*******************************************/
+
+#headerLanding h2,
+#getIt {
+    text-align: center;
+}
+
+#headerLanding h2 {
+    padding: 100px 0px 100px 0px;
+}
+
+#benefits {
+    background: #f0efef;
+    padding: 80px 475px 80px 120px;
+}
+
+#benefits p,
+#benefits ul {
+    font-size: 26px;
+    font-weight: 300;
+    color: #606060;
+}
+
+#benefits h3 {
+    padding-bottom: 30px;
+}
+
+#benefits p {
+    padding-bottom: 60px;
+}
+
+#testimonial {
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+    background: url("../images/testimonial_bg.jpg");
+    padding: 80px 240px;
+}
+
+#testimonial #quote {
+    font-weight: 300;
+    font-style: italic;
+}
+
+#testimonial #name {
+    font-weight: 600;
 }
